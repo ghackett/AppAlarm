@@ -1,0 +1,5 @@
+AppAlarm is an Open Source Android application that launches other android apps at specified times. It also has special support for Pandora Radio stations, and the ability to share custom intents with other people. However, as of Android 2.2 (Froyo) Google has removed the ability for apps to kill other apps, and this was needed for complete Pandora and Slacker Radio Support (as well as pretty much any other music app that started playing it's music on launch.
+
+I wrote this app a long time ago, and no longer have the time to actively maintain it. I have also come a VERY long way since writing AppAlarm so please don't judge me based on this code.
+
+AppAlarm is now free on the Android Market and anyone is free to do whatever they want with the code. It is officially licensed under the Apache 2 license - http://www.apache.org/licenses/LICENSE-2.0.html
