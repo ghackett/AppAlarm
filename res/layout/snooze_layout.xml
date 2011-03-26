@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/sl_root_layout" android:orientation="vertical" android:layout_height="fill_parent" android:layout_width="fill_parent">
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sa_message" android:textColor="#FFF" android:padding="10dip" android:id="@+id/sl_tv_message" android:visibility="gone"></TextView>
+<Button android:layout_height="wrap_content" android:text="@string/sa_btn_snooze" android:id="@+id/sl_btn_snooze" android:textStyle="bold" android:paddingBottom="40dip" android:paddingTop="40dip" android:layout_width="fill_parent" android:paddingLeft="60dip" android:paddingRight="60dip" android:textSize="40dip" android:layout_marginBottom="20dip" android:layout_marginLeft="5dip" android:layout_marginRight="5dip"></Button>
+<LinearLayout android:layout_height="wrap_content" android:orientation="horizontal" android:background="#CCC" android:layout_width="fill_parent"><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/sl_btn_dismiss" android:text="@string/sa_btn_dismiss" android:layout_margin="5dip" android:layout_weight="1"></Button><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dip" android:layout_weight="1" android:id="@+id/sl_btn_dismiss_and_kill" android:text="@string/sa_btn_dismiss_and_kill"></Button>
+</LinearLayout>
+</LinearLayout>

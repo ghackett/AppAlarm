@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:orientation="vertical" android:layout_height="fill_parent">
+  			<View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View>
+  
+<ScrollView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="2"><LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+
+			<LinearLayout android:id="@+id/sr_ll_rtp_mon" android:focusable="true" android:orientation="horizontal" android:layout_width="fill_parent" android:background="@android:drawable/list_selector_background" android:clickable="true" android:layout_height="wrap_content" android:gravity="center_vertical" android:padding="10dip" android:minHeight="70dip">
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18dip" android:textColor="#FFF" android:layout_weight="1" android:text="Monday">
+				</TextView>
+				<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/sr_chk_rpt_mon" android:focusable="false" android:focusableInTouchMode="false">
+				</CheckBox>
+			</LinearLayout>
+			
+			
+			
+			<View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View>
+			
+
+			<LinearLayout android:id="@+id/sr_ll_rtp_tues" android:focusable="true" android:orientation="horizontal" android:layout_width="fill_parent" android:background="@android:drawable/list_selector_background" android:clickable="true" android:layout_height="wrap_content" android:gravity="center_vertical" android:padding="10dip" android:minHeight="70dip">
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18dip" android:textColor="#FFF" android:layout_weight="1" android:text="Tuesday">
+				</TextView>
+				<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/sr_chk_rpt_tues" android:focusable="false" android:focusableInTouchMode="false">
+				</CheckBox>
+			</LinearLayout>
+			
+			
+			
+			<View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View>
+			
+
+			<LinearLayout android:id="@+id/sr_ll_rtp_wed" android:focusable="true" android:orientation="horizontal" android:layout_width="fill_parent" android:background="@android:drawable/list_selector_background" android:clickable="true" android:layout_height="wrap_content" android:gravity="center_vertical" android:padding="10dip" android:minHeight="70dip">
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18dip" android:textColor="#FFF" android:layout_weight="1" android:text="Wednesday">
+				</TextView>
+				<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/sr_chk_rpt_wed" android:focusable="false" android:focusableInTouchMode="false">
+				</CheckBox>
+			</LinearLayout>
+			
+			
+			
+			<View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View>
+			
+
+			<LinearLayout android:id="@+id/sr_ll_rtp_thur" android:focusable="true" android:orientation="horizontal" android:layout_width="fill_parent" android:background="@android:drawable/list_selector_background" android:clickable="true" android:layout_height="wrap_content" android:gravity="center_vertical" android:padding="10dip" android:minHeight="70dip">
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18dip" android:textColor="#FFF" android:layout_weight="1" android:text="Thursday">
+				</TextView>
+				<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/sr_chk_rpt_thur" android:focusable="false" android:focusableInTouchMode="false">
+				</CheckBox>
+			</LinearLayout>
+			
+			
+			
+			<View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View>
+			
+
+			<LinearLayout android:focusable="true" android:orientation="horizontal" android:layout_width="fill_parent" android:background="@android:drawable/list_selector_background" android:clickable="true" android:layout_height="wrap_content" android:gravity="center_vertical" android:padding="10dip" android:minHeight="70dip" android:id="@+id/sr_ll_rtp_fri">
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18dip" android:textColor="#FFF" android:layout_weight="1" android:text="Friday">
+				</TextView>
+				<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/sr_chk_rpt_fri" android:focusable="false" android:focusableInTouchMode="false">
+				</CheckBox>
+			</LinearLayout>
+			
+			
+			
+			<View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View>
+			
+
+			<LinearLayout android:id="@+id/sr_ll_rtp_sat" android:focusable="true" android:orientation="horizontal" android:layout_width="fill_parent" android:background="@android:drawable/list_selector_background" android:clickable="true" android:layout_height="wrap_content" android:gravity="center_vertical" android:padding="10dip" android:minHeight="70dip">
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18dip" android:textColor="#FFF" android:layout_weight="1" android:text="Saturday">
+				</TextView>
+				<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/sr_chk_rpt_sat" android:focusable="false" android:focusableInTouchMode="false">
+				</CheckBox>
+			</LinearLayout>
+			
+			
+			
+			<View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View>
+			
+
+			<LinearLayout android:id="@+id/sr_ll_rtp_sun" android:focusable="true" android:orientation="horizontal" android:layout_width="fill_parent" android:background="@android:drawable/list_selector_background" android:clickable="true" android:layout_height="wrap_content" android:gravity="center_vertical" android:padding="10dip" android:minHeight="70dip">
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18dip" android:textColor="#FFF" android:layout_weight="1" android:text="Sunday">
+				</TextView>
+				<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/sr_chk_rpt_sun" android:focusable="false" android:focusableInTouchMode="false">
+				</CheckBox>
+			</LinearLayout>
+			
+			
+			
+			
+			
+
+
+</LinearLayout>
+</ScrollView><View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View>
+
+<LinearLayout android:orientation="horizontal" android:layout_weight="1" android:layout_width="fill_parent" android:layout_height="100dip" android:gravity="center_horizontal" android:background="#CCC"><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/sr_btn_ok" android:text="Ok" android:width="100dip" android:layout_margin="10dip"></Button><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/sr_btn_cancel" android:text="Cancel" android:width="100dip" android:layout_margin="10dip"></Button>
+</LinearLayout>
+</LinearLayout>

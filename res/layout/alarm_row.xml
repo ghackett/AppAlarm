@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" android:padding="10dip" android:id="@+id/ar_ll_selectable_row" android:gravity="center_vertical">
+
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dip"><ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ar_iv_app_icon" android:adjustViewBounds="true" android:maxHeight="48dip" android:maxWidth="48dip" android:minHeight="48dip" android:minWidth="48dip"></ImageView>
+</LinearLayout><LinearLayout android:orientation="vertical" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_weight="1" android:layout_height="wrap_content">
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFF" android:textSize="18dip" android:id="@+id/ar_tv_alarm_time"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ar_tv_alarm_repeat" android:textSize="12dip"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ar_tv_app_name" android:textColor="#FFF"></TextView>
+</LinearLayout><CheckBox android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center_vertical" android:id="@+id/ar_chk_alarm_enabled" android:focusable="false"></CheckBox>
+</LinearLayout>

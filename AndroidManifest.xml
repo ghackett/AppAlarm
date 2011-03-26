@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.episode6.android.appalarm.pro"
+      android:versionName="1.2.6" android:versionCode="30">
+    <application android:label="@string/app_name" android:icon="@drawable/aal_icon_2">
+        <activity android:name=".AlarmList"
+                  android:label="@string/app_name" android:configChanges="keyboard|keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        <intent-filter>
+<action android:name="android.intent.action.VIEW"></action>
+<category android:name="android.intent.category.BROWSABLE"></category>
+<category android:name="android.intent.category.DEFAULT"></category>
+<data android:scheme="http" android:host="episode6.com" android:pathPrefix="/ibuilder/m/"></data>
+</intent-filter>
+</activity>
+    <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".AlarmEdit" android:label="@string/edit_alarm_title"></activity>
+<activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".AppChooser"></activity>
+<service android:name=".AalService">
+</service>
+<receiver android:name=".AlarmReciever"></receiver>
+<receiver android:name=".BootReciever"><intent-filter><action android:name="android.intent.action.BOOT_COMPLETED"></action>
+</intent-filter>
+<intent-filter><action android:name="android.intent.action.TIMEZONE_CHANGED"></action>
+</intent-filter>
+<intent-filter><action android:name="android.intent.action.TIME_SET"></action>
+</intent-filter>
+</receiver>
+<activity android:name=".RepeatChooser" android:theme="@android:style/Theme.Dialog"></activity>
+<activity android:theme="@android:style/Theme.Dialog" android:configChanges="keyboard|keyboardHidden|orientation" android:name=".VolumeChooser"></activity>
+<activity android:name=".CustomIntentMaker" android:theme="@android:style/Theme.Dialog"></activity>
+<activity android:theme="@android:style/Theme.Dialog" android:name=".TimeChooser"></activity>
+<activity android:name=".StringInputDialog" android:theme="@android:style/Theme.Dialog"></activity>
+<activity android:name=".SnoozeActivity" android:label="@string/sa_title" android:configChanges="keyboard|keyboardHidden|orientation" android:launchMode="singleInstance" android:theme="@android:style/Theme.Dialog"></activity>
+<receiver android:name=".SnoozeWakeupReceiver"></receiver>
+
+<activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".ProviderList"></activity>
+<activity android:name=".CustomActionActivity"></activity>
+<activity android:name=".KillAndLaunchActivity" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+</application>
+    <uses-sdk android:minSdkVersion="3" />
+
+
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+<uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+<supports-screens android:anyDensity="true" android:smallScreens="true" android:resizeable="true" android:normalScreens="true" android:largeScreens="true"></supports-screens>
+
+<uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"></uses-permission>
+
+<uses-permission android:name="android.permission.DISABLE_KEYGUARD"></uses-permission>
+<uses-permission android:name="android.permission.RESTART_PACKAGES"></uses-permission>
+<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"></uses-permission>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+
+<uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"></uses-permission>
+<uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"></uses-permission>
+</manifest> 

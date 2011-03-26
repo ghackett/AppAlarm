@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical" android:layout_height="fill_parent" android:layout_width="fill_parent" android:gravity="center">
+
+<ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="You are seeing this screen because Android 2.2 (aka Froyo) introduced a change in the way apps can be killed. Because of this change, AppAlarm cannot fully close the app it started, and keeping this screen on top of it prevents some apps (like Pandora) from becoming active again. You may have to click the back button on your phone, and quit the app you launched manually." android:padding="10dip" android:textColor="#FFF" android:textSize="18sp"></TextView></ScrollView>
+</LinearLayout>

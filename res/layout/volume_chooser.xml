@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+<View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View><LinearLayout android:layout_height="wrap_content" android:orientation="horizontal" android:layout_width="fill_parent" android:padding="5dip"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFF" android:padding="5dip" android:textSize="16dip" android:text="Media Volume:"></TextView>
+
+
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dip" android:textSize="16dip" android:id="@+id/vc_tv_volume"></TextView>
+</LinearLayout>
+
+
+<SeekBar android:layout_height="wrap_content" android:layout_margin="5dip" android:layout_width="fill_parent" android:max="100" android:id="@+id/vc_sb_volume"></SeekBar><View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View>
+<LinearLayout android:layout_height="wrap_content" android:background="#CCC" android:layout_width="fill_parent" android:orientation="horizontal" android:gravity="center"><Button android:layout_height="wrap_content" android:layout_width="100dip" android:text="OK" android:id="@+id/vc_btn_ok"></Button>
+<Button android:layout_height="wrap_content" android:id="@+id/vc_btn_cancel" android:text="Cancel" android:layout_width="100dip" android:layout_margin="5dip"></Button>
+</LinearLayout>
+</LinearLayout>

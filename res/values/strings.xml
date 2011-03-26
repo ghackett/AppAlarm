@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AppAlarm Pro</string>
+<string name="ea_ti_label">Label</string>
+<string name="ea_label_msg">Enter a custom label for your alarm.</string>
+<string name="al_welcome_msg">
+IMPORTANT: 
+\nIf you use a taskkiller, you must add AppAlarm to it\'s ignore list (or risk your alarms not going off). If AppAlarm is ever forced to close, make sure to re-open it to reschedule your alarms.\n
+\nAndroid 2.2 (Froyo) removed the ability for AppAlarm to force other apps to stop. This means that if you use AppAlarm with Pandora or Slacker (or several other music apps) you HAVE TO REMEMBER TO EXIT THOSE APPS EVERY TIME YOU FINISH USING THEM. Otherwise AppAlarm will only be able to bring those apps to the foreground, but it will not be able to make the music start. Sorry but this is a limitation in Android and there is no fix in sight :( \n\nAndroid 2.1 and below should still work just fine.\n
+\nYou can now backup your alarms to your SD card. Just press the MENU button on your phone from the main alarm list.\n
+\nAppAlarm Pro is now Free and Open Source! Code is available at https://github.com/ghackett/AppAlarm \n
+</string>
+<string name="al_menu_welcome">Show Welcome Msg</string>
+<string name="al_menu_backup_restore">Backup/Restore Alarms</string>
+<string name="al_menu_backup">Backup Alarms to SD Card</string>
+<string name="al_menu_restore">Restore Alarms from SD Card</string>
+<string name="ea_desc_dont_launch_on_call">Don\'t launch the alarm if the phone is off the hook (i.e. you\'re on a call).</string>
+<string name="ea_desc_stop_app">Force the selected app to close when the alarm service times out. This feature is NOT recommended for Slacker users.</string>
+<string name="ea_desc_net_test">Do not launch the app if the network test fails (you can also configure the backup alarm to play if the network test fails).</string>
+<string name="ea_desc_turn_on_wifi">Turns on Wi-Fi before launching the alarm. The alarm service will wait for a successful connection before launching the alarm.</string>
+<string name="ea_desc_turn_off_wifi">Turn off the Wi-Fi when the alarm service times out or is dismissed.</string>
+<string name="ea_desc_set_media_volume">Change the media volume before launching the app.</string>
+<string name="ea_desc_mute_snooze">Enabling this will unlock your phone when the alarm goes off and display the mute-snooze dialog. This allows you to snooze the alarm by muting the volume for a period of time. (You can still snooze the alarm from the notification bar when this is disabled)</string>
+<string name="ea_desc_force_restart">Force the selected app to restart before launching it. This is helpful for Pandora and StreamFurious Pro users in case you left the app paused on last use. This is NOT recommended for Slacker Radio users.</string>
+<string name="ea_hd_alarm">Alarm Options</string>
+<string name="ea_hd_stop">App Stop Options</string>
+<string name="ea_hd_backup">Backup Alarm Options</string>
+<string name="ea_hd_network">Network Test Options</string>
+<string name="ea_hd_wifi">Wi-Fi Options</string>
+<string name="ea_hd_service">Alarm Service Timeouts</string>
+<string name="ea_hd_volume">Volume Options</string>
+<string name="ea_hd_mute_snooze">Mute-Snooze Options</string>
+<string name="ea_ti_enabled">Enable Alarm</string>
+<string name="ea_ti_app">App To Launch</string>
+<string name="ea_ti_time">Alarm Time</string>
+<string name="ea_ti_repeat">Alarm Repeat</string>
+<string name="ea_ti_dont_launch_on_call">Don\'t Launch If On Call</string>
+<string name="ea_ti_stop_app">Stop App On Timeout</string>
+<string name="ea_ti_force_restart">Force App Restart On Launch</string>
+<string name="ea_ti_mute_snooze">Auto-Show Mute-Snooze</string>
+<string name="ea_ti_mute_snooze_time">Mute-Snooze Time</string>
+<string name="ea_ti_backup_option">Backup Alarm</string>
+<string name="ea_ti_backup_ringtone">Backup Alarm Ringtone</string>
+<string name="ea_ti_net_test">Test Network</string>
+<string name="ea_ti_net_test_url">Network Test URL</string>
+<string name="ea_ti_turn_on_wifi">Turn On Wi-Fi</string>
+<string name="ea_ti_wifi_wait_time">Wi-Fi Wait Time</string>
+<string name="ea_ti_wifi_failed">If Wi-Fi Connection Fails...</string>
+<string name="ea_ti_turn_off_wifi">Turn Off Wi-Fi On Dismiss</string>
+<string name="ea_ti_wl_timeout_batt">Battery Timeout</string>
+<string name="ea_ti_wl_timeout_plug">Charging Timeout</string>
+<string name="ea_ti_set_media_vol">Set Media Volume</string>
+<string name="ea_ti_media_vol">Media Volume</string>
+<string name="sid_ti_net_test_url">Network Test URL</string>
+<string name="sid_lm_net_test_url">I\'ve found that the best way to test the network is to actually try and contact a web site. Enter a URL to try and connect to before launching the app.</string>
+<string name="sid_sm_net_test_url">URL:</string>
+<string name="tch_ti_wl_batt">Alarm Service Timeout (Battery)</string>
+<string name="tch_lm_wl_batt">Choose how long to keep the alarm service running when the phone is on battery power. (NOTE: Clearing the notification icon will stop the alarm service and release the WakeLock)</string>
+<string name="tch_ti_wl_plug">Alarm Service Timeout (Charging)</string><string name="tch_lm_wl_plug">Choose how long to keep the alarm service running when the phone is plugged in. (NOTE: Clearing the notification icon will stop the alarm service and release the WakeLock)</string>
+<string name="tch_ti_wifi_wait">Wi-Fi Wait Time</string>
+<string name="tch_lm_mute_snooze">Choose how long to \"snooze\" the alarm.</string>
+<string name="tch_lm_wifi_wait">Choose how long to wait for a Wi-Fi connection before declaring a Wi-Fi failure.</string>
+<string name="as_notif_constant">AppAlarm Service</string><string name="as_nm_launched">Alarm Launched!</string>
+<string name="as_nt_launched">AppAlarm IS GO!!!</string>
+
+<string name="as_nm_waiting_for_wifi">Waiting for Wi-Fi connection...</string>
+<string name="as_nm_nf_plba">Network test failed, playing backup alarm.</string>
+<string name="as_nm_wf_plba">Wi-Fi connection failed, playing backup alarm.</string>
+<string name="as_nm_wf_la">Wi-Fi connection failed, launching alarm anyway.</string>
+<string name="edit_alarm_title">Edit Alarm...</string>
+<string name="al_menu_add">Add New Alarm</string>
+<string name="al_menu_other_apps">Other episode6 Apps</string>
+<string name="al_menu_support">Help</string>
+<string name="e6_market_uri">market://search?q=pub:episode6</string>
+<string name="as_nm_np_la">Network test passed, alarm launched!</string>
+
+<string name="sa_title">Mute-Snooze</string>
+<string name="sa_message">Press the \&quot;Snooze\&quot; button to mute the media volume. Otherwise press \&quot;Dismiss\&quot; to close this dialog and stop the alarm service and backup ringtone.</string>
+<string name="sa_btn_snooze">Snooze</string>
+<string name="sa_btn_unsnooze">Un-Snooze</string>
+<string name="sa_message_unsnooze">Press the \&quot;Un-Snooze\&quot; button to un-mute the media volume. Otherwise press \&quot;Dismiss\&quot; to close this dialog and stop the alarm service and cancel the snooze.</string>
+<string name="sa_btn_dismiss">Dismiss Alarm</string>
+<string name="sa_btn_dismiss_and_kill">Dismiss &amp; Kill App</string>
+<string name="al_menu_toggle_notif">Toggle Notification</string>
+<string name="as_stat_on_msg">The status bar notification is now ON and will be displayed whenever an alarm is enabled.</string>
+<string name="as_stat_off_msg">The status bar notification is now OFF.</string>
+<string name="snooze_warning">If you experience problems with Pandora or Slacker not starting correctly, please try disabling this feature.</string>
+<string name="ae_stop_app_warning_title">What app is this?</string>
+<string name="ae_stop_app_warning_message">If you want AppAlarm to stop a custom intent or home screen shortcut, you must select which app your custom intent represents. If you ignore this message, the \"Force App Restart On Launch\" and \"Stop App On Dismiss/Timeout\" features will be disabled.</string>
+</resources>
+    

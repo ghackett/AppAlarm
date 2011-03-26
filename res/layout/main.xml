@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+    
+    <ListView android:id="@+id/android:list"
+          android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="1"/>
+  	<TextView android:id="@+id/android:empty"
+          android:gravity="center" android:textColor="#FFF" android:textStyle="bold" android:layout_width="fill_parent" android:textSize="18dip" android:layout_height="wrap_content" android:layout_weight="1" android:text="No Alarms to Display"/>
+<LinearLayout android:id="@+id/LinearLayout01" android:layout_height="wrap_content" android:layout_width="fill_parent" android:background="#CCC" android:orientation="horizontal" android:padding="2dip" android:gravity="center"><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dip" android:layout_marginRight="5dip" android:text="@string/al_menu_add" android:layout_weight="1" android:id="@+id/m_btn_add_new"></Button><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dip" android:layout_marginRight="5dip" android:text="@string/al_menu_toggle_notif" android:layout_weight="1" android:id="@+id/m_btn_toggle_notif"></Button>
+</LinearLayout>
+</LinearLayout>

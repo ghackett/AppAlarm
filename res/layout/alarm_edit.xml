@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="vertical" android:id="@+id/ea_ll_root">
+	
+	
+	<ScrollView android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/ea_sv_full_scroller">
+		
+		
+		
+		<LinearLayout android:orientation="vertical" android:layout_height="fill_parent" android:layout_width="fill_parent">
+		
+		
+		
+			<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:background="@android:drawable/dark_header"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFF" android:padding="2dip" android:textStyle="bold" android:text="@string/ea_hd_alarm"></TextView>
+</LinearLayout>
+			
+			
+			
+			<View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View><LinearLayout android:id="@+id/ea_ll_alarm_enabled" android:focusable="true" android:orientation="horizontal" android:layout_width="fill_parent" android:background="@android:drawable/list_selector_background" android:clickable="true" android:layout_height="wrap_content" android:gravity="center_vertical" android:padding="10dip" android:minHeight="70dip">
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18dip" android:textColor="#FFF" android:layout_weight="1" android:text="@string/ea_ti_enabled">
+				</TextView>
+				<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ea_chk_alarm_enabled" android:focusable="false" android:focusableInTouchMode="false">
+				</CheckBox>
+			
+</LinearLayout><View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View><LinearLayout android:layout_height="wrap_content" android:focusable="true" android:layout_width="fill_parent" android:padding="10dip" android:background="@android:drawable/list_selector_background" android:clickable="true" android:minHeight="70dip" android:id="@+id/ea_ll_app" android:orientation="horizontal" android:gravity="center_vertical">
+
+				<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18dip" android:textColor="#FFF" android:text="@string/ea_ti_app">
+				</TextView><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ea_tv_app_name"></TextView></LinearLayout><ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ea_iv_app_icon" android:adjustViewBounds="true" android:layout_marginLeft="10dip" android:maxHeight="48dip" android:maxWidth="48dip" android:minHeight="48dip" android:minWidth="48dip"></ImageView>
+
+
+
+
+</LinearLayout>
+			
+			
+			
+			
+			
+
+			<View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View><LinearLayout android:layout_height="wrap_content" android:focusable="true" android:layout_width="fill_parent" android:padding="10dip" android:background="@android:drawable/list_selector_background" android:clickable="true" android:orientation="vertical" android:minHeight="70dip" android:id="@+id/ea_ll_label">
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFF" android:textSize="18dip" android:text="@string/ea_ti_label"></TextView>
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ea_label_msg" android:id="@+id/ea_tv_label"></TextView>
+</LinearLayout><View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View><LinearLayout android:layout_height="wrap_content" android:id="@+id/ea_ll_alarm_time" android:focusable="true" android:layout_width="fill_parent" android:padding="10dip" android:background="@android:drawable/list_selector_background" android:clickable="true" android:orientation="vertical" android:minHeight="70dip">
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18dip" android:textColor="#FFF" android:text="@string/ea_ti_time">
+				</TextView>
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ea_tv_time">
+				</TextView>
+			</LinearLayout>
+			
+			
+			
+
+			<View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View><LinearLayout android:layout_height="wrap_content" android:id="@+id/ea_ll_alarm_repeat" android:focusable="true" android:layout_width="fill_parent" android:padding="10dip" android:background="@android:drawable/list_selector_background" android:clickable="true" android:orientation="vertical" android:minHeight="70dip">
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFF" android:textSize="18dip" android:text="@string/ea_ti_repeat"></TextView>
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ea_tv_alarm_repeat"></TextView>
+</LinearLayout>	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+
+			
+			
+						<View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View><LinearLayout android:focusable="true" android:orientation="horizontal" android:layout_width="fill_parent" android:background="@android:drawable/list_selector_background" android:clickable="true" android:layout_height="wrap_content" android:gravity="center_vertical" android:padding="10dip" android:minHeight="70dip" android:id="@+id/ea_ll_dont_launch_on_call">
+				<LinearLayout android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="wrap_content" android:layout_weight="1">
+
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18dip" android:textColor="#FFF" android:layout_weight="1" android:text="@string/ea_ti_dont_launch_on_call">
+				</TextView><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ea_desc_dont_launch_on_call"></TextView></LinearLayout>
+				<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:focusable="false" android:focusableInTouchMode="false" android:id="@+id/ea_chk_dont_launch_on_call">
+				</CheckBox>
+			
+</LinearLayout><View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View><LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:background="@android:drawable/dark_header"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFF" android:padding="2dip" android:textStyle="bold" android:text="@string/ea_hd_backup"></TextView>
+</LinearLayout><View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View><LinearLayout android:focusable="true" android:orientation="horizontal" android:layout_width="fill_parent" android:background="@android:drawable/list_selector_background" android:clickable="true" android:layout_height="wrap_content" android:gravity="center_vertical" android:padding="10dip" android:minHeight="70dip" android:id="@+id/ea_ll_backup_option">
+				<LinearLayout android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="wrap_content" android:layout_weight="1"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18dip" android:textColor="#FFF" android:layout_weight="1" android:text="@string/ea_ti_backup_option">
+				</TextView>
+
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ea_tv_backup_option"></TextView></LinearLayout>
+				
+			
+</LinearLayout><View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View><LinearLayout android:layout_height="wrap_content" android:id="@+id/ea_ll_backup_alarm" android:focusable="true" android:layout_width="fill_parent" android:padding="10dip" android:background="@android:drawable/list_selector_background" android:clickable="true" android:orientation="vertical" android:minHeight="70dip"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFF" android:textSize="18dip" android:text="@string/ea_ti_backup_ringtone"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ea_tv_backup_alarm"></TextView>
+</LinearLayout><View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View><LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:background="@android:drawable/dark_header"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFF" android:padding="2dip" android:textStyle="bold" android:text="@string/ea_hd_network"></TextView>
+</LinearLayout><View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View><LinearLayout android:focusable="true" android:orientation="horizontal" android:layout_width="fill_parent" android:background="@android:drawable/list_selector_background" android:clickable="true" android:layout_height="wrap_content" android:gravity="center_vertical" android:padding="10dip" android:minHeight="70dip" android:id="@+id/ea_ll_net_test">
+				<LinearLayout android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="wrap_content" android:layout_weight="1"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18dip" android:textColor="#FFF" android:layout_weight="1" android:text="@string/ea_ti_net_test">
+				</TextView>
+
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ea_desc_net_test"></TextView></LinearLayout>
+				<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:focusable="false" android:focusableInTouchMode="false" android:id="@+id/ea_chk_net_test">
+				</CheckBox>
+			
+</LinearLayout><View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View><LinearLayout android:focusable="true" android:orientation="horizontal" android:layout_width="fill_parent" android:background="@android:drawable/list_selector_background" android:clickable="true" android:layout_height="wrap_content" android:gravity="center_vertical" android:padding="10dip" android:minHeight="70dip" android:id="@+id/ea_ll_net_test_url">
+				<LinearLayout android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="wrap_content" android:layout_weight="1"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18dip" android:textColor="#FFF" android:layout_weight="1" android:text="@string/ea_ti_net_test_url">
+				</TextView>
+
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ea_tv_net_test_url"></TextView></LinearLayout>
+				
+			
+</LinearLayout><View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View><LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:background="@android:drawable/dark_header"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFF" android:padding="2dip" android:textStyle="bold" android:text="@string/ea_hd_mute_snooze"></TextView>
+</LinearLayout><View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View><LinearLayout android:focusable="true" android:orientation="horizontal" android:layout_width="fill_parent" android:background="@android:drawable/list_selector_background" android:clickable="true" android:layout_height="wrap_content" android:gravity="center_vertical" android:padding="10dip" android:minHeight="70dip" android:id="@+id/ea_ll_mute_snooze">
+				<LinearLayout android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="wrap_content" android:layout_weight="1">
+
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18dip" android:textColor="#FFF" android:layout_weight="1" android:text="@string/ea_ti_mute_snooze">
+				</TextView><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ea_desc_mute_snooze"></TextView></LinearLayout>
+				<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:focusable="false" android:focusableInTouchMode="false" android:id="@+id/ea_chk_mute_snooze">
+				</CheckBox>
+			
+</LinearLayout><View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View><LinearLayout android:layout_height="wrap_content" android:focusable="true" android:layout_width="fill_parent" android:padding="10dip" android:background="@android:drawable/list_selector_background" android:clickable="true" android:orientation="vertical" android:minHeight="70dip" android:id="@+id/ea_ll_mute_snooze_time">
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFF" android:textSize="18dip" android:text="@string/ea_ti_mute_snooze_time"></TextView>
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ea_tv_mute_snooze_time"></TextView>
+</LinearLayout><View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View><LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:background="@android:drawable/dark_header"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFF" android:padding="2dip" android:textStyle="bold" android:text="@string/ea_hd_stop"></TextView>
+</LinearLayout><View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View><LinearLayout android:focusable="true" android:orientation="horizontal" android:layout_width="fill_parent" android:background="@android:drawable/list_selector_background" android:clickable="true" android:layout_height="wrap_content" android:gravity="center_vertical" android:padding="10dip" android:minHeight="70dip" android:id="@+id/ea_ll_force_restart">
+				<LinearLayout android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="wrap_content" android:layout_weight="1">
+
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18dip" android:textColor="#FFF" android:layout_weight="1" android:text="@string/ea_ti_force_restart">
+				</TextView><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ea_desc_force_restart"></TextView></LinearLayout>
+				<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:focusable="false" android:focusableInTouchMode="false" android:id="@+id/ea_chk_force_restart">
+				</CheckBox>
+			
+</LinearLayout><View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View><LinearLayout android:focusable="true" android:orientation="horizontal" android:layout_width="fill_parent" android:background="@android:drawable/list_selector_background" android:clickable="true" android:layout_height="wrap_content" android:gravity="center_vertical" android:padding="10dip" android:minHeight="70dip" android:id="@+id/ea_ll_stop_app">
+				<LinearLayout android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="wrap_content" android:layout_weight="1">
+
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18dip" android:textColor="#FFF" android:layout_weight="1" android:text="@string/ea_ti_stop_app">
+				</TextView><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ea_desc_stop_app"></TextView></LinearLayout>
+				<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:focusable="false" android:focusableInTouchMode="false" android:id="@+id/ea_chk_stop_app">
+				</CheckBox>
+			
+</LinearLayout><View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View><LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:background="@android:drawable/dark_header"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFF" android:padding="2dip" android:textStyle="bold" android:text="@string/ea_hd_service"></TextView>
+</LinearLayout><View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View><LinearLayout android:layout_height="wrap_content" android:focusable="true" android:layout_width="fill_parent" android:padding="10dip" android:background="@android:drawable/list_selector_background" android:clickable="true" android:orientation="vertical" android:minHeight="70dip" android:id="@+id/ea_ll_wl_timeout_batt">
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFF" android:textSize="18dip" android:text="@string/ea_ti_wl_timeout_batt"></TextView>
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ea_tv_wl_timeout_batt"></TextView>
+</LinearLayout><View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View><LinearLayout android:layout_height="wrap_content" android:focusable="true" android:layout_width="fill_parent" android:padding="10dip" android:background="@android:drawable/list_selector_background" android:clickable="true" android:orientation="vertical" android:minHeight="70dip" android:id="@+id/ea_ll_wl_timeout_plug">
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFF" android:textSize="18dip" android:text="@string/ea_ti_wl_timeout_plug"></TextView>
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ea_tv_wl_timeout_plug"></TextView>
+</LinearLayout><View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View>	
+			
+			
+			
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+		
+
+
+
+				
+			
+			
+			
+			
+			
+			<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:background="@android:drawable/dark_header"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFF" android:padding="2dip" android:textStyle="bold" android:text="@string/ea_hd_wifi"></TextView>
+</LinearLayout><View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View>	
+			
+			
+			
+			<LinearLayout android:focusable="true" android:orientation="horizontal" android:layout_width="fill_parent" android:background="@android:drawable/list_selector_background" android:clickable="true" android:layout_height="wrap_content" android:gravity="center_vertical" android:padding="10dip" android:minHeight="70dip" android:id="@+id/ea_ll_turn_on_wifi">
+				<LinearLayout android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="wrap_content" android:layout_weight="1"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18dip" android:textColor="#FFF" android:layout_weight="1" android:text="@string/ea_ti_turn_on_wifi">
+				</TextView>
+
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ea_desc_turn_on_wifi"></TextView></LinearLayout>
+				<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:focusable="false" android:focusableInTouchMode="false" android:id="@+id/ea_chk_turn_on_wifi">
+				</CheckBox>
+			</LinearLayout>
+			
+			
+			
+			<View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View>	
+			
+			
+			
+			
+			
+				
+				
+								
+				
+				
+
+
+
+
+				
+			
+			
+			
+			
+
+
+
+				
+<LinearLayout android:layout_height="wrap_content" android:id="@+id/ea_ll_wifi_options" android:layout_width="fill_parent" android:orientation="vertical"><LinearLayout android:focusable="true" android:orientation="horizontal" android:layout_width="fill_parent" android:background="@android:drawable/list_selector_background" android:clickable="true" android:layout_height="wrap_content" android:gravity="center_vertical" android:padding="10dip" android:minHeight="70dip" android:id="@+id/ea_ll_wifi_wait_time">
+				<LinearLayout android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="wrap_content" android:layout_weight="1"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18dip" android:textColor="#FFF" android:layout_weight="1" android:text="@string/ea_ti_wifi_wait_time">
+				</TextView>
+
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ea_tv_wifi_wait_time"></TextView></LinearLayout>
+				
+			
+</LinearLayout><View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View><LinearLayout android:focusable="true" android:orientation="horizontal" android:layout_width="fill_parent" android:background="@android:drawable/list_selector_background" android:clickable="true" android:layout_height="wrap_content" android:gravity="center_vertical" android:padding="10dip" android:minHeight="70dip" android:id="@+id/ea_ll_wifi_failed_action">
+				<LinearLayout android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="wrap_content" android:layout_weight="1"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18dip" android:textColor="#FFF" android:layout_weight="1" android:text="@string/ea_ti_wifi_failed">
+				</TextView>
+
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ea_tv_wifi_failed_action"></TextView></LinearLayout>
+				
+			
+</LinearLayout><View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View><LinearLayout android:focusable="true" android:orientation="horizontal" android:layout_width="fill_parent" android:background="@android:drawable/list_selector_background" android:clickable="true" android:layout_height="wrap_content" android:gravity="center_vertical" android:padding="10dip" android:minHeight="70dip" android:id="@+id/ea_ll_turn_off_wifi">
+				<LinearLayout android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="wrap_content" android:layout_weight="1"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18dip" android:textColor="#FFF" android:layout_weight="1" android:text="@string/ea_ti_turn_off_wifi">
+				</TextView>
+
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ea_desc_turn_off_wifi"></TextView></LinearLayout>
+				<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:focusable="false" android:focusableInTouchMode="false" android:id="@+id/ea_chk_turn_off_wifi">
+				</CheckBox>
+			</LinearLayout><View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View></LinearLayout><LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:background="@android:drawable/dark_header"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFF" android:padding="2dip" android:textStyle="bold" android:text="@string/ea_hd_volume"></TextView>
+</LinearLayout><View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View><LinearLayout android:focusable="true" android:orientation="horizontal" android:layout_width="fill_parent" android:background="@android:drawable/list_selector_background" android:clickable="true" android:layout_height="wrap_content" android:gravity="center_vertical" android:padding="10dip" android:minHeight="70dip" android:id="@+id/ea_ll_set_media_volume">
+				<LinearLayout android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="wrap_content" android:layout_weight="1">
+
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18dip" android:textColor="#FFF" android:layout_weight="1" android:text="@string/ea_ti_set_media_vol">
+				</TextView><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ea_desc_set_media_volume"></TextView></LinearLayout>
+				<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:focusable="false" android:focusableInTouchMode="false" android:id="@+id/ea_chk_set_media_volume">
+				</CheckBox>
+			
+</LinearLayout><View android:layout_width="fill_parent" android:layout_height="1dip" android:background="@android:drawable/divider_horizontal_dark">
+			</View><LinearLayout android:layout_height="wrap_content" android:focusable="true" android:layout_width="fill_parent" android:padding="10dip" android:background="@android:drawable/list_selector_background" android:clickable="true" android:orientation="vertical" android:minHeight="70dip" android:id="@+id/ea_ll_media_volume">
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFF" android:textSize="18dip" android:text="@string/ea_ti_media_vol"></TextView>
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ea_tv_media_volume"></TextView>
+</LinearLayout>
+</LinearLayout>
+	</ScrollView>
+</LinearLayout>
+      
