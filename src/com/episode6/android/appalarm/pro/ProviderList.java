@@ -209,6 +209,7 @@ public class ProviderList extends ListActivity {
 		case MI_TYPE_APPEND_VIEW: 
 			nI = new Intent(Intent.ACTION_VIEW);
 			nI.setData(Uri.withAppendedPath(Uri.parse(P_URI_STRINGS[mProvider]), data));
+			nI.setClassName("com.pandora.android","com.pandora.android.activity.NowPlaying");
 			return nI;
 		case MI_TYPE_STANDARD:
 			try {

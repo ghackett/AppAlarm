@@ -28,6 +28,7 @@
 <intent-filter><action android:name="android.intent.action.TIME_SET"></action>
 </intent-filter>
 </receiver>
+<activity android:name="com.pandora.android.activity.NowPlaying"></activity>
 <activity android:name=".RepeatChooser" android:theme="@android:style/Theme.Dialog"></activity>
 <activity android:theme="@android:style/Theme.Dialog" android:configChanges="keyboard|keyboardHidden|orientation" android:name=".VolumeChooser"></activity>
 <activity android:name=".CustomIntentMaker" android:theme="@android:style/Theme.Dialog"></activity>
