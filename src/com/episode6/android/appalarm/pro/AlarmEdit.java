@@ -46,7 +46,7 @@ public class AlarmEdit extends Activity {
 	private static final int DIALOG_PICK_WIFI_FAILED_ACTION = 4;
 	private static final int DIALOG_WARN_STOP_APP = 5;
 	private static final int DIALOG_BITLY = 6;
-	private static final String[] APP_TYPE_OPTIONS = {"Choose App", "Create Shortcut", "Home Screen Shortcut", "Pandora Radio Station", "Custom Intent", "Clear App Selection"};
+	private static final String[] APP_TYPE_OPTIONS = {"Choose App", "Create Shortcut", "Home Screen Shortcut", "Pandora Radio Station", "Tunewiki Shoutcast Station", "Custom Intent", "Clear App Selection"};
 	
 	private static final int ACTION_CHOOSE_APP = 2;
 	private static final int ACTION_CHOOSE_REPEAT = 3;
@@ -833,6 +833,12 @@ public class AlarmEdit extends Activity {
 //				vUpdateApp();
 //				break;
 			case 4:
+				//Tunewiki Station
+				i = new Intent(getBaseContext(), ProviderList.class);
+				i.putExtra(ProviderList.EXTRA_PROVIDER, ProviderList.PROVIDER_TUNEWIKI);
+				startActivityForResult(i, ACTION_CHOOSE_FROM_PROVIDER);
+				break;
+			case 5:
 				//Custom Intent
 				i = new Intent(getBaseContext(), CustomIntentMaker.class);
 				i.putExtra(AlarmItem.KEY_CUSTOM_ACTION, mAlarmItem.getString(AlarmItem.KEY_CUSTOM_ACTION));
@@ -842,7 +848,7 @@ public class AlarmEdit extends Activity {
 				startActivityForResult(i, ACTION_CUSTOM_INTENT);
 				break;
 
-			case 5:
+			case 6:
 				//Clear App
 				mAlarmItem.set(AlarmItem.KEY_PACKAGE_NAME, "");
 				mAlarmItem.set(AlarmItem.KEY_CUSTOM_ACTION, "");
