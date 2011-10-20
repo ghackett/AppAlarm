@@ -31,6 +31,7 @@ public class ProviderList extends ListActivity {
 	public static int PROVIDER_HOMESCREEN2 = 2;
 	public static int PROVIDER_GOOGLE_LISTEN = 3;
 	public static int PROVIDER_HTC_SENSE = 4;
+	public static int PROVIDER_TUNEWIKI = 5;
 	
 	public static final String[] P_URI_STRINGS = new String[] {
 		"content://com.pandora.provider/stations", 
@@ -38,6 +39,7 @@ public class ProviderList extends ListActivity {
 		"content://com.android.launcher2.settings/favorites",
 		"content://com.google.android.apps.listen.PodcastProvider/item",
 		"content://com.htc.launcher.settings/favorites",
+		"content://tunewiki/live_folders/shoutcast/favorites"
 	};
 	
 	public static final String[] P_CUSTOM_DATA_STRINGS = new String[] {
@@ -45,6 +47,7 @@ public class ProviderList extends ListActivity {
 		null,
 		null,
 		"http://listen.googlelabs.com/listen?id=@@",
+		null,
 		null
 	};
 	
@@ -53,7 +56,8 @@ public class ProviderList extends ListActivity {
 		"com.android.launcher",
 		"com.android.launcher2",
 		"com.google.android.apps.listen",
-		"com.htc.launcher"
+		"com.htc.launcher",
+		"com.tunewiki.lyricplayer.android"
 	};
 	
 	public static final String[] P_TITLE_KEYS = new String[] {
@@ -61,7 +65,8 @@ public class ProviderList extends ListActivity {
 		"title",
 		"title",
 		"title",
-		"title"
+		"title",
+		"name"
 	};
 	
 	public static final String[] P_DATA_KEYS = new String[] {
@@ -69,7 +74,8 @@ public class ProviderList extends ListActivity {
 		"intent",
 		"intent",
 		"guid",
-		"intent"
+		"intent",
+		"_id"
 	};
 	
 	
@@ -78,7 +84,8 @@ public class ProviderList extends ListActivity {
 		"intent!=\"\"",
 		"intent!=\"\"",
 		null,
-		"intent!=\"\""
+		"intent!=\"\"",
+		null
 	};
 	
 	public static final int[] P_MI_TYPES = new int[] {
@@ -86,7 +93,8 @@ public class ProviderList extends ListActivity {
 		MI_TYPE_STANDARD,
 		MI_TYPE_STANDARD,
 		MI_TYPE_CUSTOM,
-		MI_TYPE_STANDARD
+		MI_TYPE_STANDARD,
+		MI_TYPE_APPEND_VIEW
 	};
 	
 	public static final String[] P_WINDOW_TITLES = new String[] {
@@ -94,7 +102,8 @@ public class ProviderList extends ListActivity {
 		"Select a Shortcut from your Home Screen...",
 		"Select a Shortcut from your Home Screen...",
 		"Select a Feed from Google's Listen",
-		"Select a Shortcut from your Home Screen..."
+		"Select a Shortcut from your Home Screen...",
+		"Select a TuneWiki Shoutcast Station"
 	};
 	
 	public static final String[] P_EMPTY_LIST_MSGS = new String[] {
@@ -102,7 +111,8 @@ public class ProviderList extends ListActivity {
 		"It looks like there was an error reading the shortcuts from your home screen (or you don't have any installed).",
 		"It looks like there was an error reading the shortcuts from your home screen (or you don't have any installed).",
 		"It looks like you don't have any subscriptions set up in Google's Listen. Please close AppAlarm and make sure your subscriptions show up in Listen.",
-		"It looks like there was an error reading the shortcuts from your home screen (or you don't have any installed)."
+		"It looks like there was an error reading the shortcuts from your home screen (or you don't have any installed).",
+		"Shit out of luck buddy"
 	};
 	
 
@@ -136,8 +146,7 @@ public class ProviderList extends ListActivity {
 				P_WHERE_KEYS[mProvider], 
 				null, 
 				P_TITLE_KEYS[mProvider]);
-			
-			
+
 			if (c == null) {
 				if (mProvider == PROVIDER_HOMESCREEN) {
 					Log.d("AppAlarm", "Error reading from Launcher1, trying Launcher2");
@@ -180,14 +189,19 @@ public class ProviderList extends ListActivity {
 		
 		Cursor c = getContentResolver().query(Uri.parse(P_URI_STRINGS[mProvider]),
 				new String [] {P_TITLE_KEYS[mProvider], P_DATA_KEYS[mProvider]},
-				KEY_ID + "=" + id,
-				null,
+				KEY_ID + "=?",
+				new String[] { Long.toString(id) },
 				null);
-		c.moveToFirst();
+		
+		//TODO I can't figure out why the where statement isn't working right for Tunewiki, temporary solution
+		if (mProvider == 5)
+			c.moveToPosition(position);
+		else
+			c.moveToFirst();
 		
 		String title = c.getString(c.getColumnIndexOrThrow(P_TITLE_KEYS[mProvider]));
 		String data = c.getString(c.getColumnIndexOrThrow(P_DATA_KEYS[mProvider]));
-		c.close();
+		c.close(); 
 		
 		Intent rtrIntent = new Intent();
 		rtrIntent.putExtra(Intent.EXTRA_SHORTCUT_NAME, title);
@@ -209,6 +223,8 @@ public class ProviderList extends ListActivity {
 		case MI_TYPE_APPEND_VIEW: 
 			nI = new Intent(Intent.ACTION_VIEW);
 			nI.setData(Uri.withAppendedPath(Uri.parse(P_URI_STRINGS[mProvider]), data));
+			if (mProvider == 0)
+				nI.setClassName("com.pandora.android","com.pandora.android.activity.NowPlaying");
 			return nI;
 		case MI_TYPE_STANDARD:
 			try {
